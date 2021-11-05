@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: url(../images/bg.jpg) no-repeat center/cover;
+  text-align: center;
+  overflow: auto;
+}
+
+div.loading {
+  position: fixed;
+  background-color: rgb(37 82 151);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+i#loader {
+  display: grid;
+  place-items: center;
+  font-size: 5rem;
+  animation: chakri 5s linear infinite;
+}
+
+div.navbar {
+  background-color: rgb(37 82 151);
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
+div.navbar i {
+  font-size: 27px;
+  animation: chakri 4s infinite linear;
+}
+
+
+
+@keyframes chakri {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+div.navbar h2 a {
+  color: black;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+form {
+  font-family: "Varela Round", sans-serif;
+  margin-top: 10px;
+  padding: 10px;
+  width: auto;
+}
+
+input#searchcity {
+  padding: 8px;
+  margin: 5px;
+  width: auto;
+  min-width: 25%;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid black;
+}
+
+.btn {
+  font-family: "Varela Round", sans-serif;
+  background-color: rgb(37 82 151);
+  padding: 8px;
+  margin: 5px;
+  width: auto;
+  min-width: 5%;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(66 107 166);
+  border: 1px solid white;
+  color: white;
+}
+
+.tempinfo {
+  font-family: "Varela Round", sans-serif;
+  display: inline-flex;
+  flex-direction: column;
+  height: 290px;
+  width: auto;
+  min-width: 25%;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgb(37 82 151);
+  margin: 5px 10px;
+}
+
+span#speed {
+  font-weight: 1rem;
+  font-family: "Merriweather", serif;
+}
+
+hr {
+  background-color: #6e8eb3;
+  padding: 1px;
+  border: none;
+}
+
+.date_day {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.date_day p {
+  padding: 1px 30px;
+}
+
+
+.city {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+
+.weather_data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  color: white;
+  font-size: 35px;
+}
+
+div {
+  padding: 10px;
+}
+
+p {
+  padding: 5px;
+}
+
+p#temp {
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: "Merriweather", serif;
+}
+
+p#location {
+  font-size: 1.5rem;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+p#day {
+  padding-right: auto;
+}
+
+.data_hide {
+  display: none;
+  transition: all 0.3s linear;
+}
+
+marquee {
+  font-family: "Varela Round", sans-serif;
+  background-color: rgb(37 82 151);
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  padding: 5px;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width:400px){
+  .date_day p {
+    padding:1px 15px;
+  }
+}

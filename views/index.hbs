@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlobalWeather</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body onload="loading()">
+    <div class="loading">
+      <i id='loader' class="far fa-snowflake"></i>
+    </div>
+    <nav>
+      <div class="navbar">
+        <i class="far fa-snowflake"></i>
+        <h2 class="title">
+          <a href="/">GlobalWeather</a>
+        </h2>
+      </div>
+    </nav>
+
+    <!-- *********************************************************************** -->
+
+    <div class="container">
+      <form id="form">
+        <input
+          type="text"
+          id="searchcity"
+          placeholder="Enter the city"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <input type="submit" value="Check" class="btn" />
+      </form>
+      <div class="tempinfo">
+        <div class="date_day">
+        <p id="day">Day</p>
+        <p id="date">Date</p>
+      </div>
+      <hr />
+      <div class="city">
+        <i class="fa fa-street-view"></i>
+        <p id="location">City</p>
+      </div>
+      <div class="full_data data_hide">
+        <div class="weather_data">
+          <p id="temp">Temp</p>
+          <p id="temp_status">Status</p>
+        </div>
+        <p id="temp_desc"></p>
+        <p id="wind_speed"></p>
+      </div>
+    </div>
+    <marquee behavior="" direction="">Arsh Sharma&nbsp;&nbsp; |
+      &nbsp;&nbsp;Copyright &copy; 2021&nbsp;&nbsp; | &nbsp;&nbsp;All Rights
+      Reserved !</marquee>
+    <script src="./js/main.js"></script>
+  </div>
+  </body>
+</html>
